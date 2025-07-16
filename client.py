@@ -62,5 +62,6 @@ async def run_client():
         #     await asyncio.sleep(0.1)
         #     pbar.update(1)
         # pbar.close()
+
         await task
         await asyncio.sleep(1)
