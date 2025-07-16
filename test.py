@@ -1,5 +1,3 @@
-import asyncio
-import json
 import numpy as np
 import yfinance as yf
 import time
@@ -17,7 +15,6 @@ def get_data(ticker: str, timestamp: np.float64) -> np.float32:
 def main():
     ticker_symbol = "AAPL"
     ts = np.float64(time.mktime(time.strptime("2025-07-15", "%Y-%m-%d")))
-    print(f"UNIX timestamp: {ts}")
     result = get_data(ticker_symbol, ts)
     print(f"Price on that date: {result}")
 

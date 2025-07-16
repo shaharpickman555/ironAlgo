@@ -56,7 +56,6 @@ async def run_client():
         print(f"\n📨 Sending request for {ticker} on {date.date()}")
         task = asyncio.create_task(send_request(ticker, timestamp, callback_handler))
 
-        # Optional: show delay with progress bar
         # pbar = tqdm(total=10, desc="Waiting", leave=False)
         # for _ in range(10):
         #     await asyncio.sleep(0.1)
